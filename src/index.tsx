@@ -117,10 +117,6 @@ function BasicsDashboard() {
           <LoveLanguages WordsOfAffirmation="both" ActsOfService="giver" PhysicalTouch="both" QualityTime="both" ReceivingGifts="giver"/>
         </div>
       </div>
-      
-      
-
-      
     </Section>
   );
 }
