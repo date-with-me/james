@@ -130,8 +130,8 @@ async function buildSingleFile() {
 </body>
 </html>`;
 
-  fs.writeFileSync(path.join(projectRoot, 'docs/single-file.html'), htmlTemplate);
-  console.log('Single HTML file built: docs/single-file.html');
+  fs.writeFileSync(path.join(projectRoot, 'docs/index.html'), htmlTemplate);
+  console.log('Single HTML file built: docs/index.html');
 }
 
 buildSingleFile().catch(console.error);
