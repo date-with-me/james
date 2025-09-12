@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom pulse animation for OPEX missing warning */
+.pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 193, 7, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 193, 7, 0);
+  }
+}
+
+
+/* Edge-radiating pulse for an SVG X: duplicates the icon absolutely and
+   scales/fades the clone so the pulse originates from the X's strokes. */
+.x-pulse-wave {
+  transform-origin: center;
+  opacity: 0;
+  animation: x-pulse-wave 2s ease-out infinite;
+}
+
+@keyframes x-pulse-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.0;
+    filter: drop-shadow(0 0 0 rgba(220, 38, 38, 0));
+  }
+  10% {
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.0;
+    filter: drop-shadow(0 0 10px rgba(220, 38, 38, 0.55))
+            drop-shadow(0 0 18px rgba(220, 38, 38, 0.35));
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+    filter: drop-shadow(0 0 0 rgba(220, 38, 38, 0));
+  }
+}
+
+/* Animate stroke width on the clone so the lines thicken as it expands */
+.x-pulse-wave path,
+.x-pulse-wave line {
+  animation: x-pulse-stroke 2s ease-out infinite;
+  stroke: rgb(255, 0, 0);
+}
+
+@keyframes x-pulse-stroke {
+  0% {
+    stroke-width: 2;
+  }
+  50% {
+    stroke-width: 8;
+  }
+  100% {
+    stroke-width: 16;
+  }
+}
+
+.green-pulse-wave {
+  transform-origin: center;
+  opacity: 0;
+  animation: green-pulse-wave 2s ease-out infinite;
+}
+
+@keyframes green-pulse-wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.0;
+    filter: drop-shadow(0 0 0 rgba(44, 220, 38, 0));
+  }
+  10% {
+    opacity: 0.35;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.0;
+    filter: drop-shadow(0 0 10px rgba(44, 220, 38, 0.55))
+            drop-shadow(0 0 18px rgba(68, 220, 38, 0.35));
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+    filter: drop-shadow(0 0 0 rgba(38, 220, 62, 0));
+  }
+}
+
+.green-pulse-wave path,
+.green-pulse-wave line {
+  animation: green-pulse-stroke 2s ease-out infinite;
+  stroke: rgb(66, 248, 66);
+}
+
+@keyframes green-pulse-stroke {
+  0% {
+    stroke-width: 2;
+  }
+  50% {
+    stroke-width: 4;
+  }
+  100% {
+    stroke-width: 8;
+  }
+}
+
+/* Global text selection color */
+::selection {
+  color: #ffffff; /* orange text */
+  background-color: rgba(255, 166, 0, 0.952);
+}
+::-moz-selection {
+  color: #ffffff; /* orange text */
+  background-color: rgba(255, 166, 0, 0.952);
+}
