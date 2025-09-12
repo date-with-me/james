@@ -8,9 +8,9 @@
     "dev:build": "esbuild src/index.tsx --bundle --outfile=dist/index.js --sourcemap --watch",
     "dev:serve": "serve .",
     "build": "esbuild src/index.tsx --bundle --outfile=dist/index.js --minify && tailwindcss -i ./src/index.css -o ./dist/index.css --minify",
+    "build:github": "node tools/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "repl": "npx ts-node",
-    "build:single": "node tools/build-single.js"
+    "repl": "npx ts-node"
   },
   "author": "",
   "license": "ISC",
