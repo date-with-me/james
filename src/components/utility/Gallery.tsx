@@ -16,8 +16,8 @@ function isVideoPath(path: string): boolean {
 }
 
 function normalizeSrc(path: string): string {
-  // Ensure paths like "./assets/..." work the same as "/assets/..."
-  return path.replace(/^\.\//, "/");
+  // Keep relative paths as-is for GitHub Pages compatibility
+  return path;
 }
 
 export default function Gallery({ set, className, height }: GalleryProps) {

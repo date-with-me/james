@@ -17,7 +17,7 @@ function Header() {
   return (
     <header className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 md:gap-10">
       <img
-        src="/assets/james-pp.png"
+        src="./assets/james-pp.png"
         alt="Profile Picture"
         className="w-28 h-28 md:w-40 md:h-40 rounded-full object-cover ring-4 ring-white shadow"
       />
@@ -98,7 +98,7 @@ function BasicsDashboard() {
         <div className="p-4 bg-gray-50 rounded-lg">
           <div className="text-sm uppercase tracking-wide text-gray-500 mb-2">Looking in this area</div>
           <LookingInMap
-            data={"/assets/area.geojson"}
+            data={"./assets/area.geojson"}
             theme={(row) => {
               return row.color
             }}
