@@ -233,7 +233,7 @@ function Articles() {
         <h2 className="font-bold underline">Musical Instruments</h2>
         <h2 className="font-bold underline">Video Editing</h2>
         <h2 className="font-bold underline">Science & Edutainment</h2>
-        <h2 className="font-bold underline">Custom Jewerly</h2>
+        <h2 className="font-bold underline">Custom Jewelry</h2>
         <h2 className="font-bold underline">Cooking</h2>
       </Section>
 
