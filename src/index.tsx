@@ -169,7 +169,7 @@ function Articles() {
         </p>
         <h2 className="font-bold underline">Tiggy and Nora</h2>
         <p className="my-2">
-          Tiggy and Nora are my parent's cats. Until last year, I lived with my
+          Tiggy and Nora are my parent's cats. Until 2024-12-04, I lived with my
           parents and grew very close with both Tiggy and Nora. It is amazing
           how different their personalities are! Tiggy is super chill, and is
           best friends with whoever will feed him 😂 On the other hand Nora has
