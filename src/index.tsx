@@ -120,7 +120,7 @@ function BasicsDashboard() {
               { color: "#FFFF00", description: "We'll make it work!" },
               {
                 color: "#FF0000",
-                description: "If you are willing to relocate, I'm down!",
+                description: "Let's give it a go but, long term, one of us will have to relocate.",
               },
             ]}
             center={[52.61743, -1.138]}
